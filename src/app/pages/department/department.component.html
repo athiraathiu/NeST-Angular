@@ -1,0 +1,17 @@
+<div class="container text-center">
+    <div class="row">
+    @for (item of department;track item.id){
+        
+            <div class="col-6">
+              <div class="p-3"><div class="card" style="width: 18rem;">
+                  <img src="{{item.Image}}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <p class="card-text">{{item.Title}}</p>
+                    <a routerLink="{{item.id}}" class="btn btn-primary">View More</a>                </div>
+                </div></div>
+            </div>
+            
+
+    }
+</div>
+    </div>
